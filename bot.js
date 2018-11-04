@@ -9,7 +9,7 @@ client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', '•-chat')
     let memberavatar = member.user.avatarURL
       if (!channel) return;
-message.channel.send('**~~~Welcome~ To RG. :beers: ~~**')
+member.channel.send('**~~~Welcome~ To RG. :beers: ~~**')
     });
     
      client.login(process.env.BOT_TOKEN); 
