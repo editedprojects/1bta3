@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', message => {
-    let channel = member.guild.channels.find('name', '•-chat')
+    let channel = message.guild.channels.find('name', '•-chat')
       if (!channel) return;
 message.channel.send('**~~~Welcome~ To RG. :beers: ~~**')
 
