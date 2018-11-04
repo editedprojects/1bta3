@@ -10,6 +10,7 @@ client.on('guildMemberAdd', member => {
     let memberavatar = member.user.avatarURL
       if (!channel) return;
 member.channel.send('**~~~Welcome~ To RG. :beers: ~~**')
+})
     });
     
      client.login(process.env.BOT_TOKEN); 
