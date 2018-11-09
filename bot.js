@@ -5,11 +5,10 @@ client.on('ready', () => {
      client.user.setGame("RoyaleGames","http://twitch.tv/HP");
 });
 
-client.on('guildMemberAdd', message => {
-    let channel = message.guild.channels.find('name', '•-chat')
-      if (!channel) return;
-message.channel.send('**~~~Welcome~ To RG. :beers: ~~**')
-
-    });
+client.on('guildMemberAdd', async member => {
+if(member.guild.id === "438261593894289418") {
+member.guild.channels.find(r => r.name === 'hub').send("Welcome**2,RoyaleGames** Server.");
+}
+});
     
      client.login(process.env.BOT_TOKEN); 
